@@ -2,21 +2,21 @@ import java.io.Serializable;
 
 public class Nodo implements Serializable
 {
-	private Interventi info;
+	private Intervento info;
 	private Nodo link;
 	
-	public Nodo(Invitato persona)
+	public Nodo(Intervento p)
 	{
-		setInfo(persona);
+		setInfo(p);
 		link=null;
 	}
 
-	public Invitato getInfo() 
+	public Intervento getInfo() 
 	{
 		return info;
 	}
 
-	public void setInfo(Invitato info) 
+	public void setInfo(Intervento info) 
 	{
 		this.info = info;
 	}

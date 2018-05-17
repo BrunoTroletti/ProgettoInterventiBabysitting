@@ -1,22 +1,22 @@
 import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Interventi implements Serializable
+public class Intervento implements Serializable
 {
 	private int codiceidentificativointervento;
 	private String nomecliente;
 	private String nomebabysitter;
 	private LocalDate iniziointervento;
 	private LocalDate fineintervento;
-	
-	public Interventi(int codiceidentificativointervento, String nomecliente, String nomebabysitter)
+	private int pagamento;
+	public Intervento(int codiceidentificativointervento, String nomecliente, String nomebabysitter)
 	{
 		setCodiceidentificativointervento(codiceidentificativointervento);
 		setNomecliente(nomecliente);
 		setNomebabysitter(nomebabysitter);
 	}
 	
-	public Interventi(Interventi i)
+	public Intervento(Intervento i)
 	{
 		setCodiceidentificativointervento(i.getCodiceidentificativointervento());
 		setNomecliente(i.getNomecliente());
